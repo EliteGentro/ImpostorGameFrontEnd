@@ -35,7 +35,7 @@ export const GameplayScreen: React.FC = () => {
           <div className={styles.playerList}>
             <span className={styles.playersLabel}>Players:</span>
             <div className={styles.players}>
-              {players.map((player, index) => (
+              {players.map((player) => (
                 <span key={player.id} className={styles.playerChip}>
                   {player.name}
                 </span>

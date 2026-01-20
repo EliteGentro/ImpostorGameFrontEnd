@@ -216,8 +216,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
   },
 
   getWinner: () => {
-    const { players, votes } = get();
-    const impostors = players.filter((p) => p.isImpostor);
+    const { players } = get();
     const voteResults = get().getVoteResults();
     
     if (voteResults.length === 0) return null;
