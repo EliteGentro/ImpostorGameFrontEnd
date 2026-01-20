@@ -1,0 +1,98 @@
+.passScreen,
+.revealScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-xl);
+  text-align: center;
+  width: 100%;
+}
+
+.passIcon,
+.roleIcon {
+  font-size: 4rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.passTitle {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-muted);
+  font-weight: 400;
+}
+
+.playerName {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.passSubtitle {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.progress {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  margin-top: var(--spacing-md);
+}
+
+/* Reveal Screen */
+.revealScreen {
+  border-radius: var(--border-radius-lg);
+  min-height: 60vh;
+}
+
+.villager {
+  background: linear-gradient(180deg, rgba(78, 204, 163, 0.1) 0%, transparent 50%);
+}
+
+.impostor {
+  background: linear-gradient(180deg, rgba(233, 69, 96, 0.2) 0%, transparent 50%);
+}
+
+.roleTitle {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+}
+
+.impostor .roleTitle {
+  color: var(--color-impostor);
+}
+
+.villager .roleTitle {
+  color: var(--color-secondary);
+}
+
+.secretWord {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  color: var(--color-text);
+  padding: var(--spacing-lg) var(--spacing-xl);
+  background: var(--color-bg-card);
+  border-radius: var(--border-radius-md);
+  border: 2px solid var(--color-secondary);
+}
+
+.roleSubtitle {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-md);
+  max-width: 280px;
+}
+
+.tip {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-md);
+  background: var(--color-bg-secondary);
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-sm);
+}
+
+.tipLabel {
+  font-weight: 600;
+  color: var(--color-impostor);
+}

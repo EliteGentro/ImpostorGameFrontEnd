@@ -1,0 +1,94 @@
+.inputRow {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.inputRow > div {
+  flex: 1;
+}
+
+.playerList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+.emptyText {
+  text-align: center;
+  color: var(--color-text-muted);
+  padding: var(--spacing-xl);
+}
+
+.playerCard {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: var(--color-bg-secondary);
+  border-radius: var(--border-radius-md);
+  min-height: var(--min-touch-target);
+}
+
+.playerNumber {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg-card);
+  border-radius: var(--border-radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.playerName {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--color-text);
+  font-size: var(--font-size-md);
+  font-family: var(--font-family);
+  padding: var(--spacing-xs);
+  border-radius: var(--border-radius-sm);
+}
+
+.playerName:focus {
+  outline: none;
+  background: var(--color-bg-card);
+}
+
+.removeBtn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  border-radius: var(--border-radius-full);
+  transition: all var(--transition-fast);
+  font-size: var(--font-size-md);
+}
+
+.removeBtn:hover {
+  background: var(--color-error);
+  color: var(--color-text);
+}
+
+.warningText {
+  text-align: center;
+  color: var(--color-warning);
+  font-size: var(--font-size-sm);
+  padding: var(--spacing-sm);
+}
+
+.playerCount {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-xs);
+}

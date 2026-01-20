@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-md);
+  background: var(--color-bg-secondary);
+  border-radius: var(--border-radius-md);
+}
+
+.label {
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.value {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  min-width: 48px;
+  text-align: center;
+  color: var(--color-primary);
+}

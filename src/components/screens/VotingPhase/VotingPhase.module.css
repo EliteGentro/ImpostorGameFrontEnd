@@ -1,0 +1,86 @@
+.passScreen,
+.voteScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-xl);
+  text-align: center;
+  width: 100%;
+}
+
+.passIcon {
+  font-size: 4rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.passTitle {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-muted);
+  font-weight: 400;
+}
+
+.playerName {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.passSubtitle {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  max-width: 280px;
+}
+
+.progress {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  margin-top: var(--spacing-md);
+}
+
+/* Vote Screen */
+.voteTitle {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.voteSubtitle {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.voteOptions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  width: 100%;
+  max-width: 320px;
+}
+
+.voteButton {
+  width: 100%;
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  font-family: var(--font-family);
+  background: var(--color-bg-card);
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-md);
+  color: var(--color-text);
+  cursor: pointer;
+  min-height: var(--min-touch-target);
+  transition: all var(--transition-fast);
+}
+
+.voteButton:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.voteButton:active {
+  transform: translateY(0);
+}
